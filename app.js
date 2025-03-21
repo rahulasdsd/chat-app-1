@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, "front-end", "build")));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 
-const corsOptions = { origin: "http://localhost:3000" };
+const corsOptions = { origin: "http://localhost:3001" };
 app.use(cors(corsOptions));
 
 mongoose
@@ -74,5 +74,5 @@ app.post("/api/delete-message", (req, res) => {
 });
 
 app.listen(process.env.PORT || 3001, () => {
-  console.log("Server is running on http://localhost:3000");
+  console.log("Server is running on http://localhost:3001");
 });
