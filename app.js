@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 require("dotenv").config();
 const cors = require("cors");
 const app = express();
+////suuuu
 
 // Serve static files from the React build folder
 app.use(express.static(path.join(__dirname, "front-end", "build")));
